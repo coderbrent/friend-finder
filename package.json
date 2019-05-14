@@ -1,0 +1,22 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "friend finder full stack web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderbrent/friend-finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderbrent/friend-finder/issues"
+  },
+  "homepage": "https://github.com/coderbrent/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
