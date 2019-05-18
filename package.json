@@ -18,9 +18,7 @@
   "homepage": "https://github.com/coderbrent/friend-finder#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mysql": "^2.17.1",
     "nodemon": "^1.19.0",
-    "nvm": "0.0.4",
     "path": "^0.12.7"
   }
 }
