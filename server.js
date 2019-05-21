@@ -12,5 +12,5 @@ app.use(express.static('app/public'));
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Friend Finder app listening on port ${port}!`))
 
