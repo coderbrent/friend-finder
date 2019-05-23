@@ -2,23 +2,27 @@
   "name": "friend-finder",
   "version": "1.0.0",
   "description": "friend finder full stack web app",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.0",
+    "nvm": "^0.0.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coderbrent/friend-finder.git"
   },
-  "author": "",
+  "author": "brentabruzese",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/coderbrent/friend-finder/issues"
   },
-  "homepage": "https://github.com/coderbrent/friend-finder#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "nodemon": "^1.19.0",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/coderbrent/friend-finder#readme"
 }
