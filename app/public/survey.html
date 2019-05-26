@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="local:/Users/brentabruzese/Desktop/projects/friend-finder/app/public/script.js" type="text/javascript"></script>
     <title>Friend Finder</title>
   </head>
   <body>
@@ -18,139 +17,175 @@
             <h2>Survey Questions</h2>
         </div>
 
-      <form>
+      <form class="survey">
       <div class="form-group row">
         <div class="col-md-10">
           <h5><strong>About You</strong></h5>
           <label for="form-control"></label><input class="form-control" type="text" id="userName"></input>
-          <input class="form-control" type="email" id="email"></input>
+          <input class="form-control" type="url" id="photoURL"></input>
         </div>
       </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 1: </strong></h5>
         Your mind is always buzzing with unexplored ideas and plans.
-        <select class="custom-select">
+        <select class="custom-select" name="answers">
           <option selected>0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
         </select>
       </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 2: </strong></h5>
           Generally speaking, you rely more on your experience than your imagination.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 3: </strong></h5>
           You find it easy to stay relaxed and focused even when there is some pressure.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 4: </strong></h5>
           You rarely do something just out of sheer curiosity.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 5: </strong></h5>
           People can rarely upset you.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 6: </strong></h5>
           It is often difficult for you to relate to other people’s feelings.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 7: </strong></h5>
           In a discussion, truth should be more important than people’s sensitivities.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 8: </strong></h5>
           You rarely get carried away by fantasies and ideas.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
       <div class="form-group row">
         <h5 class='mr-2'><strong>Question 9: </strong></h5>
           You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
-          <select class="custom-select">
+          <select class="custom-select" name="answers">
             <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
           </select>
         </div>
         <div class="form-group row">
           <h5 class='mr-2'><strong>Question 10: </strong></h5>
             You feel more energetic after spending time with a group of people.
-            <select class="custom-select">
+            <select class="custom-select" name="answers">
               <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
+              <option value=1>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
             </select>
           </div>
           <button type="submit" class="btn btn-primary" onclick="submitSurvey()">Submit Survey</button>
       </form>
 
+<script>
+
+//new user object constructor
+function NewUser(name, photo, scores) {
+  this.name = name;
+  this.photo = photo;
+  this.scores = scores;
+}
+
+//when the submitSurvey action is taken, we collect 
+function submitSurvey() {
+  event.preventDefault();
+  var selections = $(".survey").serializeArray();
+
+  var username = $("#userName").val().trim();
+  var userphoto = $("#photoURL").val().trim();
+
+  var thisUser = new NewUser(username, userphoto, selections);
+
+  $.get("/api/friends", function(data, status) {
+    //get all the scores in the API and push them into friendScores * how do we know whose score is whose?
+    console.log(thisUser);
+    for(let i = 0; i < data.length; i++) {
+      let friendScores = [];
+        console.log(data[i].scores[i]);
+        friendScores.push[i];
+        console.log(friendScores);
+    }
+
+  }).then(function() {
+      console.log('survey submitted successfully')
+  });
+}
+
+</script>
+
+
     </div>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>

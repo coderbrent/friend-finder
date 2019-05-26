@@ -1,3 +1,5 @@
+console.log('this is working');
+
 function submitSurvey() {
   console.log('you got here so far')
   event.preventDefault();
@@ -20,19 +22,8 @@ function submitSurvey() {
   });
 }
 
-  
+function whatever() {
 
-  //iterate through the values selected and push them to the answered array.
-  // let selection = $(".custom-select").val();
+}
 
-  // for(const index of answered) {
-  //     answered.push(index);
-
-  //     $.ajax("/data/friends.json", function(err, results) {
-
-  //     })
-  // }
-
-$(".custom-select").on('click', function() {
-
-})
+whatever();
