@@ -8,184 +8,196 @@
     <title>Friend Finder</title>
   </head>
   <body>
-    <header>
 
-    </header>
-
-    <div class="container">
-        <div class="row">
-            <h2>Survey Questions</h2>
-        </div>
-
-      <form class="survey">
-      <div class="form-group row">
-        <div class="col-md-10">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Survey Questions</h2>
           <h5><strong>About You</strong></h5>
-          <label for="form-control"></label><input class="form-control" type="text" id="userName"></input>
-          <input class="form-control" type="url" id="photoURL"></input>
         </div>
       </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 1: </strong></h5>
-        Your mind is always buzzing with unexplored ideas and plans.
-        <select class="custom-select" name="answers">
-          <option selected>0</option>
-          <option value=1>1</option>
-          <option value=2>2</option>
-          <option value=3>3</option>
-          <option value=4>4</option>
-          <option value=5>5</option>
-        </select>
-      </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 2: </strong></h5>
-          Generally speaking, you rely more on your experience than your imagination.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 3: </strong></h5>
-          You find it easy to stay relaxed and focused even when there is some pressure.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 4: </strong></h5>
-          You rarely do something just out of sheer curiosity.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 5: </strong></h5>
-          People can rarely upset you.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 6: </strong></h5>
-          It is often difficult for you to relate to other people’s feelings.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 7: </strong></h5>
-          In a discussion, truth should be more important than people’s sensitivities.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 8: </strong></h5>
-          You rarely get carried away by fantasies and ideas.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-      <div class="form-group row">
-        <h5 class='mr-2'><strong>Question 9: </strong></h5>
-          You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
-          <select class="custom-select" name="answers">
-            <option selected>0</option>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-          </select>
-        </div>
-        <div class="form-group row">
-          <h5 class='mr-2'><strong>Question 10: </strong></h5>
-            You feel more energetic after spending time with a group of people.
-            <select class="custom-select" name="answers">
-              <option selected>0</option>
-              <option value=1>1</option>
-              <option value=2>2</option>
-              <option value=3>3</option>
-              <option value=4>4</option>
-              <option value=5>5</option>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="survey">
+            Full Name: <input type="text" id="userName" name="fullname"></input>
+            Photo URL: <input type="url" id="photoURL" name="photo"></input>
+
+            <h5 class='mr-2'><strong>Question 1: </strong></h5>
+              Your mind is always buzzing with unexplored ideas and plans.
+              <select class="custom-select" name="answer1">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 2: </strong></h5>
+              Generally speaking, you rely more on your experience than your imagination.
+              <select class="custom-select" name="answer2">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 3: </strong></h5>
+               You find it easy to stay relaxed and focused even when there is some pressure.
+              <select class="custom-select" name="answer3">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 4: </strong></h5>
+              You rarely do something just out of sheer curiosity.
+              <select class="custom-select" name="answer4">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 5: </strong></h5>
+              People can rarely upset you.
+              <select class="custom-select" name="answer5">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 6: </strong></h5>
+              It is often difficult for you to relate to other people’s feelings.
+              <select class="custom-select" name="answer6">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 7: </strong></h5>
+              In a discussion, truth should be more important than people’s sensitivities.
+              <select class="custom-select" name="answer7">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <h5 class='mr-2'><strong>Question 8: </strong></h5>
+              You rarely get carried away by fantasies and ideas.
+              <select class="custom-select" name="answer8">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
+              </select>
+
+            <div class="card m-2">
+              <div class="card-header">
+                <h5 class='card-title'>Question 9: </h5>
+              </div>
+                <div class="card-body">
+                  <div class="card-text">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</div>
+                  <select class="custom-select" name="answer9">
+                    <option value=1>1 - Strongly Disagree</option>
+                    <option value=2>2 - Somewhat Disagree</option>
+                    <option value=3>3 - No Opinion</option>
+                    <option value=4>4 - Somewhat Agree</option>
+                    <option value=5>5 - Strongly Agree</option>
+                  </select>
+                </div>
+            </div>
+
+            <h5 class='mr-2'><strong>Question 10: </strong></h5>
+               You feel more energetic after spending time with a group of people.
+              <select class="custom-select" name="answer10">
+                <option value=1>1 - Strongly Disagree</option>
+                <option value=2>2 - Somewhat Disagree</option>
+                <option value=3>3 - No Opinion</option>
+                <option value=4>4 - Somewhat Agree</option>
+                <option value=5>5 - Strongly Agree</option>
             </select>
-          </div>
-          <button type="submit" class="btn btn-primary" onclick="submitSurvey()">Submit Survey</button>
-      </form>
-
-<script>
-
-//new user object constructor
-function NewUser(name, photo, scores) {
-  this.name = name;
-  this.photo = photo;
-  this.scores = scores;
-}
-
-//when the submitSurvey action is taken, we collect 
-function submitSurvey() {
-  event.preventDefault();
-  var selections = $(".survey").serializeArray();
-
-  var username = $("#userName").val().trim();
-  var userphoto = $("#photoURL").val().trim();
-
-  var thisUser = new NewUser(username, userphoto, selections);
-
-  $.get("/api/friends", function(data, status) {
-    //get all the scores in the API and push them into friendScores * how do we know whose score is whose?
-    console.log(thisUser);
-    for(let i = 0; i < data.length; i++) {
-      let friendScores = [];
-        console.log(data[i].scores[i]);
-        friendScores.push[i];
-        console.log(friendScores);
-    }
-
-  }).then(function() {
-      console.log('survey submitted successfully')
-  });
-}
-
-</script>
-
-
+            <button class="btn btn-primary" onclick="submitForm()" data-toggle="modal" data-target="#exampleModal">Submit Survey</button>
+          </form>
+        </div>
+      </div>
     </div>
+  
+    <script>
+      //First up, I created a helper function called arrSum that takes two arguments, total and value. It returns the sum of these two args.
+          const arrSum = (total, value) => {
+            return total + value;
+          }
+    //below is the submitForm function that is called on click in this survey upon submission. It grabs some basic input from the DOM (user and photo url) as well as
+    //the score the user gets on the survey. The scores are serialized from the form into an array of objects...
+        function submitForm() {
+          event.preventDefault();
+          const name = document.getElementById("userName").value;
+          const photo = document.getElementById("photoURL").value;
+          const scores = $(".custom-select").serializeArray();
+          const scoresSumArray = [];
+          // this is what gave me the most trouble - I needed to iterate through the serialized array, grab the "value" key/value and push it into
+          // its own array.
+          for(i=0; i < scores.length; i++) {
+            scoresSumArray.push(parseInt(scores[i].value))
+          }
+          // from there, I used my arrSum function above, which combines forces with the reduceRight array method to add all those values up.
+          let scoreSum = scoresSumArray.reduceRight(arrSum);
+          
+          const userInfo = {
+            name: name,
+            photo: photo,
+            scoreTotal: scoreSum
+          }
+    
+          $.ajax('/api/friends', {
+            method: "POST",
+            data: userInfo
+          }, (result) => {
+            console.log(result.match)
+            console.log(result.match)
+            $("#user_name").text(result.match);
+            $("#user_photo").attr("src", result.match)
+            
+          }).then(function(err) {
+            if (err) throw err;
+          })
+        }
+        
+    </script>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your Match!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4 id="#user_name"></h4>
+          <img id="#user_photo">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
