@@ -163,14 +163,13 @@
           $.ajax('/api/friends', {
             method: "POST",
             data: userInfo
-          }, (result) => {
-            console.log(result.match)
-            console.log(result.match)
-            $("#user_name").text(result.match);
-            $("#user_photo").attr("src", result.match)
+          }).then(result => {
+            console.log(result)
+            console.log(result.name)
+            console.log(result.photo)
+            $("#user_name").text(result.name);
+            $("#user_photo").attr("src", result.photo)
             
-          }).then(function(err) {
-            if (err) throw err;
           })
         }
         

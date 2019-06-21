@@ -5,6 +5,7 @@ const friends = require('../data/friends.js')
 
 module.exports = app => {
   app.post('/api/friends', (req, res) => {
+    console.log(req.body)
     const userScore = req.body.scoreTotal;
     const scoreArray = [];
     //iterate through the imported friends array, tally up all their scores and put them into an array.
@@ -20,7 +21,8 @@ module.exports = app => {
       //gets the stored friends scores, sums them up and then subtracts them from the submitted users score.
       //since i was getting negative numbers here, i used Math.abs to make sure that "0" was the smallest number we could get.
       scoreSum = Math.abs(userScore - friends[i].scores.reduceRight(arrSum));
-      scoreArray.push([friendName, photoURL, scoreSum])  
+      console.log(friends[i].scores)
+      scoreArray.push([friendName, photoURL, scoreSum])
     }
 
     //since we know the smallest number (difference) will indicate our closest match, we sort the scoreArray in descending order by
@@ -29,11 +31,16 @@ module.exports = app => {
       return a[2] - b[2]
     })
 
-    //since the array is now sorted properly, our best match will sit in the 0 position which can be easily extracted.
-    let match = scoreArray[0];    
-    console.log(match);
+    //since the array is now sorted properly, our best match will sit in the 0 position which can be easily extracted.    
     friends.push(req.body)
-    res.end();
+
+    let response = {
+      name: scoreArray[0][0],
+      photo: scoreArray[0][1]
+    }
+console.log(response);
+
+    res.json(response);
     
   });
     
